@@ -1,0 +1,53 @@
+body{
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+	font-family: Helvetica, sans-serif;
+}
+#variation {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+}
+
+.accordion{
+	width: 600px;
+}
+.accordionTitle {
+	position: relative;
+	height: 80px;
+	background-color: #555;
+	color: #fff;
+	border: 5px dashed rgba(0,0,0,.5);
+}
+.defaultHidden {
+	height: 0;
+	margin: 0;
+	width: 100%;
+	transition: height 2s ease;
+	overflow: hidden;
+}
+
+/* Variant 2 */
+
+#variantTwo{
+	width: 600px;
+}
+
+.accTitle {
+	height: 80px;
+	background-color: #777;
+	color: #ABC;
+	border: 5px dotted rgba(0,0,0,.5);
+}
+.hiddenContent{
+	height: 0;
+	margin: 0;
+	overflow: auto;
+	transition: all 2s ease;
+}
+.displayContent {
+	height: 200px;
+}
